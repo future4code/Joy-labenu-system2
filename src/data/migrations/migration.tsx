@@ -1,6 +1,6 @@
 import { connection } from "./connection"
 import users from "./users.json"
-import recipes from "./recipes.json"
+import recipes from "./recipes.json"//
 
 const printError = (error: any) => { console.log(error.sqlMessage || error.message) }
 

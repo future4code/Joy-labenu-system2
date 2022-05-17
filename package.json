@@ -6,7 +6,8 @@
    "scripts": {
       "start": "tsc && node ./dist/server.js",
       "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/server.ts",
-      "build": "tsc"
+      "build": "tsc",
+      "migrations": "tsnd ./src/data/migrations/migrations.ts"
    },
    "author": "",
    "license": "ISC",

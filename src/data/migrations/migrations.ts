@@ -1,12 +1,13 @@
-import { connection } from "../connection/connection"
+import { ConnectionDatabase } from "../connection/ConnectionDatabase"
 import classPop from "./classPop.json"
 import teachersPop from "./teachersPop.json"
 import studentsPop from "./studentsPop.json"
 
 const printError = (error: any) => { console.log(error.sqlMessage || error.message) }
 
-const createTables = () => connection
-   .raw(`
+const connection = new ConnectionDatabase()
+
+const createTables = () => connection.getConnection().raw(`
       CREATE TABLE IF NOT EXISTS Class (
          id VARCHAR(255) PRIMARY KEY,
          name VARCHAR(255) NOT NULL,
@@ -60,22 +61,22 @@ const createTables = () => connection
    .then(() => { console.log("Tabelas criadas") })
    .catch(printError)
 
-const insertClass = () => connection("Class")
+const insertClass = () => connection.getConnection()("Class")
    .insert(classPop)
    .then(() => { console.log("Turma criada!") })
    .catch(printError)
 
-const insertTeachers = () => connection("Teachers")
+const insertTeachers = () => connection.getConnection()("Teachers")
    .insert(teachersPop)
    .then(() => { console.log("Professores criados!") })
    .catch(printError)
 
-   const insertStudents = () => connection("Students")
+   const insertStudents = () => connection.getConnection()("Students")
    .insert(studentsPop)
    .then(() => { console.log("Estudantes criados!") })
    .catch(printError)
 
-const closeConnection = () => { connection.destroy() }
+const closeConnection = () => { connection.getConnection().destroy() }
 
 createTables()
    .then(insertClass)

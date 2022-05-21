@@ -1,5 +1,4 @@
 import { GetStudentsRepository } from "../../repositories/get-students-name-repository";
-import { CustomError } from "../customError/CustomError";
 
 export class CasesGetStudents {
   constructor( 

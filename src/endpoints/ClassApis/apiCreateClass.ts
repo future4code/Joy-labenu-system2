@@ -1,11 +1,11 @@
 import{ Request, Response } from "express";
 import { KnexCreateClassRepository } from "../../repositories/knex/knex-create-class-repository";
 import { CasesCreateClass } from "../../class/Class`s/CreateClass";
-import { CustomError } from "../../class/customError/CustomError";
+import { CustomError } from "../../class/CustomError/CustomError";
 
 const { v4: uuidv4 } = require('uuid');
 
-export const apiCreateClass = async ( req: Request, res: Response ) => {
+export const apiCreateClass = async ( req: Request, res: Response ): Promise<{}> => {
  try {
 
   let { 
@@ -29,7 +29,7 @@ export const apiCreateClass = async ( req: Request, res: Response ) => {
     modules
   });
 
-  return res.status(201).json(`Classe ${name} criada com sucesso.`);
+  return res.status(201).json({ message: `Classe ${name} criada com sucesso.` });
  } catch  ( error ) {
         if ( error instanceof CustomError ) {
           return res.status(error.statusCode || 500).send(error.message)

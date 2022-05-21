@@ -1,5 +1,5 @@
 import { CreateClassRepository } from "../../repositories/create-class-repository";
-import { CustomError } from "../customError/CustomError";
+import { CustomError } from "../CustomError/CustomError";
 
 interface SendCreateClassCaseRequest {
   id: string

@@ -1,3 +1,5 @@
+// STUDENTS
+
 ### 
 GET http://localhost:3003/students?name=rick
 ###
@@ -11,10 +13,21 @@ Content-Type: application/json
   "classId": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
 }
 
+###
+PUT http://localhost:3003/students
+Content-Type: application/json
+
+{
+ "studentId": "0a9e2176-da13-4e9f-b15e-ac4dd7e503a3",
+ "idClass": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
+}
+
 //*================================================================================
 
+// CLASS
+
 ### 
-GET http://localhost:3003/class?name=Teste Eterna 2
+GET http://localhost:3003/class?name=Heley
 
 
 ###
@@ -22,6 +35,16 @@ POST http://localhost:3003/class
 Content-Type: application/json
 
 {
- "name": "Teste Eterna 2"
+ "name": "Teste Eterna 2",
+ "modules": 2
 }
+
+###
+PUT http://localhost:3003/class/108dce73-ca6a-499f-a963-25ec4e0b65a6
+Content-Type: application/json
+
+{
+ "modules": 2
+}
+
     

@@ -1,9 +1,9 @@
 import{ Request, Response } from "express";
-import { KnexGetActiveClassRepository } from "../..//repositories/knex/knex.get-active-class";
+import { KnexGetActiveClassRepository } from "../..//repositories/knex/knex.get-active-class-repository";
 import { CasesActiveClass } from "../../class/Class`s/GetActiveClass";
-import { CustomError } from "../../class/customError/CustomError";
+import { CustomError } from "../../class/CustomError/CustomError";
 
-export const apiActiveClassStudent = async ( req: Request, res: Response ) => {
+export const apiActiveClassStudent = async ( req: Request, res: Response ): Promise<{}> => {
  try {
 
   const nameClass = req.query.name as string;
@@ -31,7 +31,7 @@ export const apiActiveClassStudent = async ( req: Request, res: Response ) => {
       throw new CustomError("Esta turma não existe.", 409)
     };
 
-  return res.status(200).json(listActiveClass);
+  return res.status(200).json({ listActiveClass: listActiveClass });
  } catch  ( error ) {
         if ( error instanceof CustomError ) {
           return res.status(error.statusCode || 500).send(error.message)

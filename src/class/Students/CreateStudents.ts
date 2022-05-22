@@ -1,5 +1,5 @@
 import { CreateStudentsRepository } from "../../repositories/create-students-repository";
-import { CustomError } from "../customError/CustomError";
+import { CustomError } from "../CustomError/CustomError";
 
 import { currentDate } from "../../adapters/convertAmericanDate";
 

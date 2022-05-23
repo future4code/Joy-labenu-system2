@@ -1,4 +1,4 @@
-import { GetActiveClassRepository } from "../../repositories/get-active-class";
+import { GetActiveClassRepository } from "../../repositories/get-active-class-repository";
 
 export class CasesActiveClass {
   constructor( 

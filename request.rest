@@ -47,4 +47,22 @@ Content-Type: application/json
  "modules": 2
 }
 
+// ============================================================================
+
+// TEACHERS
+
+###
+GET http://localhost:3003/teachers
+
+###
+POST http://localhost:3003/teachers
+Content-Type: application/json
+
+{
+ "name": "Nicolas Tesla",
+  "email": "nicolastesla@gmail.com",
+  "birthDate": "02/01/1899",
+  "classId": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
+}
+
     

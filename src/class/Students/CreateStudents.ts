@@ -5,7 +5,7 @@ import { currentDate } from "../../adapters/convertAmericanDate";
 
 import { checkSpace, validateEmail } from "../../adapters/validateEmail";
 
-interface SendCreateUserCaseRequest {
+interface SendCreateStudentCaseRequest {
   id: string
   name: string
   email: string
@@ -19,7 +19,7 @@ export class CasesCreateStudents {
      private createStudentsRepository: CreateStudentsRepository
   ){}
 
-  async execute( request: SendCreateUserCaseRequest) {
+  async execute( request: SendCreateStudentCaseRequest) {
     const { 
       id,
       name,
@@ -41,7 +41,7 @@ export class CasesCreateStudents {
     };
 
     if ( birth_date > currentDate ) { 
-      throw new CustomError(`Você estar inserindo uma data que ainda não chegou. Por favor insira uma da anterior a ${currentDate}`, 400); 
+      throw new CustomError(`Você estar inserindo uma data que ainda não chegou. Por favor insira uma data anterior a ${currentDate}`, 400); 
     };
 
     await this.createStudentsRepository.create({

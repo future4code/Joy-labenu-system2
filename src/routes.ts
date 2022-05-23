@@ -8,6 +8,9 @@ import { apiCreateClass } from "./endpoints/ClassApis/apiCreateClass";
 import { apiActiveClassStudent } from "./endpoints/ClassApis/apiActiveClass";
 import {  apiChangeClassModules } from "./endpoints/ClassApis/apiChangeClassModules";
 
+import { apiGetAllTeachers } from "./endpoints/TeachersApis/apiGetAllTeachers";
+import { apiCreateTeacher } from "./endpoints/TeachersApis/apiCreateTeachers";
+
 
 export const routes = express.Router();
 
@@ -22,3 +25,5 @@ routes.post("/class", apiCreateClass);
 routes.put("/class/:id", apiChangeClassModules);
 
 //* Teachers Endpoints
+routes.get("/teachers", apiGetAllTeachers);
+routes.post("/teachers", apiCreateTeacher);

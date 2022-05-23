@@ -1,15 +1,16 @@
 import express from "express";
 
-import { apiCreateStudent } from "./endpoints/StudentsApis/apiCreateStudent";
-import { apiGetStudent } from "./endpoints/StudentsApis/apiGetStudents";
-import { apiChangeClassStudent } from "./endpoints//StudentsApis/apiChangeClassStudent";
+import { apiCreateStudent } from "./controllers/StudentsApis/apiCreateStudent";
+import { apiGetStudent } from "./controllers/StudentsApis/apiGetStudents";
+import { apiChangeClassStudent } from "./controllers//StudentsApis/apiChangeClassStudent";
 
-import { apiCreateClass } from "./endpoints/ClassApis/apiCreateClass";
-import { apiActiveClassStudent } from "./endpoints/ClassApis/apiActiveClass";
-import {  apiChangeClassModules } from "./endpoints/ClassApis/apiChangeClassModules";
+import { apiCreateClass } from "./controllers/ClassApis/apiCreateClass";
+import { apiActiveClassStudent } from "./controllers/ClassApis/apiActiveClass";
+import {  apiChangeClassModules } from "./controllers/ClassApis/apiChangeClassModules";
 
-import { apiGetAllTeachers } from "./endpoints/TeachersApis/apiGetAllTeachers";
-import { apiCreateTeacher } from "./endpoints/TeachersApis/apiCreateTeachers";
+import { apiGetAllTeachers } from "./controllers/TeachersApis/apiGetAllTeachers";
+import { apiCreateTeacher } from "./controllers/TeachersApis/apiCreateTeachers";
+import { apiChangeClassTeacher } from "./controllers/TeachersApis/apiChangeClassTeacher";
 
 
 export const routes = express.Router();
@@ -27,3 +28,4 @@ routes.put("/class/:id", apiChangeClassModules);
 //* Teachers Endpoints
 routes.get("/teachers", apiGetAllTeachers);
 routes.post("/teachers", apiCreateTeacher);
+routes.put("/teachers", apiChangeClassTeacher);

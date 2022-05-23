@@ -1,8 +1,8 @@
 import{ Request, Response } from "express";
 import { KnexCreateTeachersRepository } from "../../repositories/knex/knex-create-teachers-repository";
-import {  CasesCreateTeachers } from "../../class/Teachers/CreateTeachers";
+import {  CasesCreateTeachers } from "../../business/Teachers/CreateTeachers";
 import { convertAmericanDate } from "../../adapters/convertAmericanDate";
-import { CustomError } from "../../class/CustomError/CustomError";
+import { CustomError } from "../../business/CustomError/CustomError";
 
 const { v4: uuidv4 } = require('uuid');
 

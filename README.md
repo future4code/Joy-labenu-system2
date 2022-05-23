@@ -31,3 +31,37 @@ As funcionalidades básicas são:
 → Adicionar docente na turma;
 
 → Pegar a idade de algum estudante a partir do id
+
+## Tecnologias utilizadas 🖥️
+- Typescript
+- Node
+- MySQL
+- Express
+- Cors
+- Dotenv
+- Knex
+
+
+## Desenvolvedores 🤖
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://github.com/RickHardBR/RickHardBR#readme">
+        <img src="https://avatars.githubusercontent.com/u/89301596?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil de Ricardo Ribeiro"/>
+      <br />
+        <sub><b>Ricardo Ribeiro</b></sub>
+      <br />
+      </td>  
+      <td align="center"><a href="https://github.com/GabrielSS187">
+        <img src="https://avatars.githubusercontent.com/u/86306877?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil de Gabriel Silva"/>
+      <br />
+        <sub><b>Gabriel Silva</b></sub>
+      <br />
+      </td>  
+      <td align="center"><a href="https://github.com/Defaultao">
+        <img src="https://avatars.githubusercontent.com/u/89326652?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil de Celio Santos"/>
+      <br />
+        <sub><b>Celio Santos</b></sub>
+      <br />
+      </td>  
+   </td>  
+</table>

@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0a9e2176-da13-4e9f-b15e-ac4dd7e503a1",
+        "name": "Celio",
+        "email": "celio@gmail.com",
+        "birth_date": "1990/04/12",
+        "class_id": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
+    },
+    {
+        "id": "0a9e2176-da13-4e9f-b15e-ac4dd7e503a2",
+        "name": "Gabriel",
+        "email": "gabriel@gmail.com",
+        "birth_date": "1998/02/23",
+        "class_id": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
+    },
+    {
+        "id": "0a9e2176-da13-4e9f-b15e-ac4dd7e503a3",
+        "name": "RickHard",
+        "email": "rickhard@bol.com.br",
+        "birth_date": "1971/10/18",
+        "class_id": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
+    }
+]

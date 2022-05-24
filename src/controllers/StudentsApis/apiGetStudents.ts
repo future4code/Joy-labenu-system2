@@ -1,7 +1,7 @@
 import{ Request, Response } from "express";
 import { KnexGetStudentsRepository } from "../../repositories/knex/knex-get-student-name-repository";
-import { CasesGetStudents } from "../../class/Students/GetStudentName";
-import { CustomError } from "../../class/CustomError/CustomError";
+import { CasesGetStudents } from "../../business/Students/GetStudentName";
+import { CustomError } from "../../business/CustomError/CustomError";
 
 export const apiGetStudent = async ( req: Request, res: Response ): Promise<{}> => {
  try {

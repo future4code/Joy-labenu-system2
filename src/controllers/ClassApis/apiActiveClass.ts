@@ -1,7 +1,7 @@
 import{ Request, Response } from "express";
 import { KnexGetActiveClassRepository } from "../..//repositories/knex/knex.get-active-class-repository";
-import { CasesActiveClass } from "../../class/Class`s/GetActiveClass";
-import { CustomError } from "../../class/CustomError/CustomError";
+import { CasesActiveClass } from "../../business/Class`s/GetActiveClass";
+import { CustomError } from "../../business/CustomError/CustomError";
 
 export const apiActiveClassStudent = async ( req: Request, res: Response ): Promise<{}> => {
  try {

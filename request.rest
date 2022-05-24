@@ -27,7 +27,7 @@ Content-Type: application/json
 // CLASS
 
 ### 
-GET http://localhost:3003/class?name=Heley
+GET http://localhost:3003/class?name=Elon Musk
 
 
 ###
@@ -35,8 +35,8 @@ POST http://localhost:3003/class
 Content-Type: application/json
 
 {
- "name": "Teste Eterna 2",
- "modules": 2
+ "name": "Elon Musk",
+ "modules": 1
 }
 
 ###
@@ -47,4 +47,30 @@ Content-Type: application/json
  "modules": 2
 }
 
+// ============================================================================
+
+// TEACHERS
+
+###
+GET http://localhost:3003/teachers
+
+###
+POST http://localhost:3003/teachers
+Content-Type: application/json
+
+{
+ "name": "Nicolas Tesla",
+  "email": "nicolastesla@gmail.com",
+  "birthDate": "02/01/1899",
+  "classId": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
+}
+
+###
+PUT http://localhost:3003/teachers
+Content-Type: application/json
+
+{
+ "teacherId": "0a9e2176-da13-4e9f-b15e-ac4dd7e503b9",
+ "classId": "108dce73-ca6a-499f-a963-25ec4e0b65a6"
+}
     

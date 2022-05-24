@@ -1,7 +1,7 @@
 import{ Request, Response } from "express";
 import { KnexChangeClassStudentRepository } from "../../repositories/knex/knex-change-class-student-repository";
-import { CasesChangeClassStudent } from "../../class/Students/ChangeClassStudent";
-import { CustomError } from "../../class/CustomError/CustomError";
+import { CasesChangeClassStudent } from "../../business/Students/ChangeClassStudent";
+import { CustomError } from "../../business/CustomError/CustomError";
 
 export const apiChangeClassStudent = async ( req: Request, res: Response ): Promise<{}> => {
  try {

@@ -1,7 +1,7 @@
 import{ Request, Response } from "express";
 import { KnexCreateClassRepository } from "../../repositories/knex/knex-create-class-repository";
-import { CasesCreateClass } from "../../class/Class`s/CreateClass";
-import { CustomError } from "../../class/CustomError/CustomError";
+import { CasesCreateClass } from "../../business/Class`s/CreateClass";
+import { CustomError } from "../../business/CustomError/CustomError";
 
 const { v4: uuidv4 } = require('uuid');
 
